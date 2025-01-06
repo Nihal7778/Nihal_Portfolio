@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihal Mallikarjun - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/react/umd/react.development.js" crossorigin></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.development.js" crossorigin></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .animate-fade-in {
+            animation: fadeIn 1.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .h-screen {
+    height: 100vh;
+}
+
+</style>
+
+</head>
+
+<body class="bg-black text-white font-sans">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-gray-900 to-black py-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-4xl font-bold text-yellow-400">Nihal Mallikarjun</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-yellow-500 transition duration-300">About</a></li>
+                    <li><a href="#skills" class="hover:text-green-500 transition duration-300">Skills</a></li>
+                    <li><a href="#experience" class="hover:text-red-500 transition duration-300">Experience</a></li>
+                    <li><a href="#projects" class="hover:text-blue-500 transition duration-300">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-500 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <!-- Hero Section -->
+<!-- Hero Section -->
+<section class="h-screen flex flex-col justify-center items-center bg-gradient-to-b from-black to-gray-900">
+    <!-- Reduced Picture Size and Added Spacing -->
+    <div class="relative mb-6">
+        <img src="Nihal.jpeg" alt="Nihal Mallikarjun" 
+             class="w-32 h-34 rounded-full shadow-lg border-4 border-yellow-400">
+    </div>
+
+    <!-- Name Section -->
+    <h2 class="text-6xl font-extrabold mb-4 text-yellow-400 animate-fade-in">
+        Hello, I am Nihal Mallikarjun
+    </h2>
+
+    <!-- Hero Description -->
+    <p class="text-xl mb-6 text-gray-300 text-center max-w-2xl">
+        Tech enthusiast with a passion for Generative AI, MLOps, and data-driven solutions,
+        dedicated to harnessing the power of technology to drive innovation.
+    </p>
+
+    <!-- Buttons Section -->
+    <div class="flex space-x-4">
+        <a href="https://drive.google.com/drive/folders/17K34x1tzs4fHEIoIbVKWSgvIPYnnhPZn" 
+           target="_blank" 
+           class="genz-btn">
+            Download Resume
+        </a>
+
+        <a href="https://linkedin.com/in/nihal778/" 
+           target="_blank" 
+           class="genz-btn">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+
+        <a href="https://github.com/Nihal7778" 
+           target="_blank" 
+           class="genz-btn">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+    </div>
+</section>
+
+
+            
+            <style>
+                .flex {
+                    display: flex;
+                    gap: 16px; /* Space between buttons */
+                }
+                
+                .genz-btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 200px;
+                    height: 50px;
+                    color: #ffffff;
+                    font-weight: bold;
+                    font-family: 'Arial', sans-serif;
+                    border-radius: 15px;
+                    text-decoration: none;
+                    background: linear-gradient(135deg, #1e3a8a, #1d4ed8); /* Blue-700 to Blue-800 */
+                    position: relative;
+                    overflow: hidden;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 0 10px rgba(29, 78, 216, 0.5), 0 4px 15px rgba(0, 0, 0, 0.3);
+                }
+            
+                .genz-btn::before {
+                    content: "";
+                    position: absolute;
+                    top: -50%;
+                    left: -50%;
+                    width: 200%;
+                    height: 200%;
+                    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+                    transform: rotate(0deg);
+                    transition: all 0.5s ease;
+                }
+            
+                .genz-btn:hover::before {
+                    transform: rotate(180deg);
+                }
+            
+                .genz-btn:hover {
+                    background: linear-gradient(135deg, #1d4ed8, #1e3a8a); /* Reverse gradient on hover */
+                    transform: scale(1.05);
+                    box-shadow: 0 0 20px rgba(29, 78, 216, 0.8), 0 6px 20px rgba(0, 0, 0, 0.4);
+                }
+            </style>
+            
+    </section>
+
+
+
+
+     <!-- About Me Section-->
+    <section id="about" class="py-16 bg-gray-900 relative overflow-hidden h-screen">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('neu.jpg'); opacity: 0.5;"></div>
+        <div class="container mx-auto text-center relative z-10 h-full flex flex-col justify-center">
+            <h2 class="text-4xl font-bold mb-4 text-yellow-400 animate-fade-in" style="padding-right: 20px 0;">About Me</h2>
+            
+           
+            
+            <p class="text-lg max-w-3xl mx-auto text-white font-bold" style="margin-right: 20px;">
+                I am Nihal Mallikarjun, pursuing an MS in Data Analytics and Engineering at Northeastern University.I have a strong foundation in developing AI-powered applications, including leveraging libraries
+                like Hugging Face Transformers and OpenAI APIs for tasks such as NLP, chatbot development, and recommendation systems with skills in Python, SQL, PostgreSQL, and NoSQL excels in data engineering, cleaning, and optimization to support AI-driven insights.
+            </p>
+        </div>
+    </section>
+   
+
+   <!-- Skills Section -->
+<section id="skills" class="py-16 bg-gradient-to-b from-gray-800 to-black">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-4 text-green-400 animate-fade-in">My Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Programming Languages -->
+            <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <div class="flex justify-center mb-4">
+                    <img src="software.png" alt="Programming Languages" class="w-11 h-11">
+                </div>
+                <h3 class="text-2xl font-bold mb-2 text-blue-400">Programming Languages</h3>
+                <p class="text-gray-300">Python, SQL, JavaScript, HTML, CSS</p>
+            </div>
+            <!-- Data Engineering & Cloud -->
+            <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <div class="flex justify-center mb-4">
+                    <img src="coding.png" alt="Data Engineering & Cloud" class="w-10 h-11">
+                </div>
+                <h3 class="text-2xl font-bold mb-2 text-blue-400">Data Engineering & Cloud</h3>
+                <p class="text-gray-300">AWS (EC2, RDS, S3), Azure (Synapse, Data Factory), GCP (BigQuery, Cloud Run)</p>
+            </div>
+            <!-- Data Analysis & Visualization -->
+            <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <div class="flex justify-center mb-4">
+                    <img src="cal.png" alt="Data Analysis & Visualization" class="w-11 h-11">
+                </div>
+                <h3 class="text-2xl font-bold mb-2 text-blue-400">Data Analysis & Visualization</h3>
+                <p class="text-gray-300">Pandas, NumPy, Matplotlib, Seaborn, Power BI, Tableau, Google Looker</p>
+            </div>
+            <!-- Machine Learning & AI Tools -->
+            <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <div class="flex justify-center mb-4">
+                    <img src="artificial-intelligence-technolog.png" alt="Machine Learning & AI" class="w-11 h-11">
+                </div>
+                <h3 class="text-2xl font-bold mb-2 text-blue-400">Machine Learning & AI</h3>
+                <p class="text-gray-300">TensorFlow, Keras, Scikit-Learn, Hugging Face, OpenAI, LangChain</p>
+            </div>
+            <!-- Generative AI -->
+            <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <div class="flex justify-center mb-4">
+                    <img src="Generative_AI_(2).png" alt="Generative AI" class="w-11 h-11">
+                </div>
+                <h3 class="text-2xl font-bold mb-2 text-blue-400">Generative AI</h3>
+                <p class="text-gray-300">LLMs (GPT-4, BERT), Prompt Engineering, Fine-Tuning NLP Models</p>
+            </div>
+            <!-- MLOps Tools -->
+            <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <div class="flex justify-center mb-4">
+                    <img src="mlops.webp" alt="MLOps Tools" class="w-11 h-11">
+                </div>
+                <h3 class="text-2xl font-bold mb-2 text-blue-400">MLOps Tools</h3>
+                <p class="text-gray-300">MLflow, Kubeflow, Docker, Kubernetes, Jenkins, GitHub Actions, Airflow</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-gradient-to-b from-gray-800 to-black">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4 text-red-400">My Experience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Experience 1 -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-2 text-yellow-400">Software Developer Intern</h3>
+                    <p class="text-gray-300">VedaInfo Inc, CA | May 2024 – Aug 2024</p>
+                    <ul class="list-disc list-inside text-left text-gray-300 mt-4">
+                        <li>Developed 30+ dynamic React.js components for an admin dashboard, ensuring responsive design.</li>
+                        <li>Engineered backend workflows with Node.js and PostgreSQL, optimizing complex data queries.</li>
+                        <li>Integrated OAuth 2.0 authentication, enhancing security and access management.</li>
+                        <li>Designed modern web pages using MUI (Material-UI) to deliver a seamless user experience.</li>
+                    </ul>
+                </div>
+                <!-- Experience 2 -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-2 text-yellow-400">Data Analyst Intern</h3>
+                    <p class="text-gray-300">Tectonas Soft Solutions Pvt. Ltd | Dec 2021 – Mar 2022</p>
+                    <ul class="list-disc list-inside text-left text-gray-300 mt-4">
+                        <li>Conducted market research and identified patterns using data from cybersecurity projects.</li>
+                        <li>Performed data cleansing, data retrieval, and SQL-based transformations for analysis.</li>
+                        <li>Collaborated with IT, operations, and risk management teams to optimize workflows.</li>
+                    </ul>
+                </div>
+                <!-- Experience 3 -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-2 text-yellow-400">Junior Business Analyst Intern</h3>
+                    <p class="text-gray-300">SK VedaInfo Technologies Pvt. Ltd | July 2021 – Sept 2021</p>
+                    <ul class="list-disc list-inside text-left text-gray-300 mt-4">
+                        <li>Developed sales forecasting models using machine learning to predict retail performance.</li>
+                        <li>Generated actionable insights and automated reports using Tableau and Power BI.</li>
+                        <li>Estimated project scopes and aligned deliverables with business objectives.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4 text-blue-400">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-2 text-yellow-400">LLM Fine-Tuning for Custom Chatbot</h3>
+                    <p class="text-gray-300">
+                        Fine-tuned GPT-4 to enhance chatbot accuracy by 30% and improve user engagement by 25%. Utilized advanced NLP techniques like sentiment analysis, intent detection, and named entity recognition (NER). Deployed on AWS Lambda to achieve cost-efficiency and scalability.
+                    </p>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-2 text-yellow-400">Database Management Systems</h3>
+                    <p class="text-gray-300">
+                        Established a connection between Python and MySQL to dynamically extract data and generate visualizations. Employed advanced query optimization techniques and implemented clustering algorithms to categorize unstructured datasets using NoSQL for efficient data management.
+                    </p>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-2 text-yellow-400">Vehicle Collision Detection System</h3>
+                    <p class="text-gray-300">
+                        Developed a deep learning model using YOLO for real-time collision detection. Integrated supervised machine learning algorithms like Random Forests and Logistic Regression to improve prediction accuracy for high-risk scenarios. Implemented an alert mechanism to provide early warnings, enhancing road safety.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gradient-to-b from-gray-800 to-black">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4 text-green-400 animate-fade-in">Contact Me</h2>
+            <p class="text-lg mb-4 text-gray-300">Let's Work Together!</p>
+            <a href="mailto:mallikarjun.n@northeastern.edu" class="px-6 py-3 bg-green-600 hover:bg-green-800 text-white font-bold rounded-lg shadow-lg transition duration-300">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-500">Developed by Nihal © 2025</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="https://linkedin.com/in/nihal778/" target="_blank" class="text-blue-500 hover:text-yellow-400 transition duration-300"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/Nihal7778" target="_blank" class="text-yellow-400 hover:text-blue-500 transition duration-300"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
